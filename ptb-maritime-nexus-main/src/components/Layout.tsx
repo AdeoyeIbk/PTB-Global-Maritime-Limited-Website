@@ -120,11 +120,14 @@ const Layout = ({ children }: LayoutProps) => {
                 delivering excellence in offshore logistics and oil & gas support services.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary">
-                  LinkedIn
+                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-white">
+                  Facebook
                 </Button>
-                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary">
+                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-white">
                   Twitter
+                </Button>
+                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-white">
+                  Instagram
                 </Button>
               </div>
             </div>
