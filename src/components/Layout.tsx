@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import LogoOnOrange from "@/assets/PTB_LOGO_on_orange.png";
-import LogoOnOBlue from "@/assets/PTB_Logo_on_blue.png";
+import LogoOnOBlue from "@/assets/PTB_LOGO_on_blue.png";
 
 interface LayoutProps {
   children: ReactNode;
