@@ -2,8 +2,8 @@ import { ReactNode, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import LogoOnOrange from "@/assets/PTB LOGO-on-orange.png";
-import LogoOnOBlue from "@/assets/PTB Logo-on-blue.png";
+import LogoOnOrange from "@/assets/PTB_LOGO_on_orange.png";
+import LogoOnOBlue from "@/assets/PTB_Logo_on_blue.png";
 
 interface LayoutProps {
   children: ReactNode;
