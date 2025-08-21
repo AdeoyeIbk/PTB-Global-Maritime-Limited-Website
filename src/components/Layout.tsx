@@ -2,6 +2,8 @@ import { ReactNode, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import LogoOnOrange from "@/assets/PTB LOGO-on-orange.png";
+import LogoOnOBlue from "@/assets/PTB Logo-on-blue.png";
 
 interface LayoutProps {
   children: ReactNode;
@@ -29,8 +31,8 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">P</span>
+              <div className="flex items-center justify-center">
+                <img src={LogoOnOrange} alt="PTB Logo" className="w-auto h-8" />
               </div>
               <span className="font-bold text-xl text-primary">PTB Global Maritime Limited</span>
             </Link>
@@ -110,9 +112,9 @@ const Layout = ({ children }: LayoutProps) => {
             {/* Company Info */}
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center">
-                  <span className="text-secondary-foreground font-bold text-lg">P</span>
-                </div>
+                  <div className="flex items-center justify-center">
+                <img src={LogoOnOBlue} alt="PTB Logo" className="w-auto h-8" />
+              </div>
                 <span className="font-bold text-xl">PTB Global Maritime Resource</span>
               </div>
               <p className="text-primary-foreground/80 mb-4 max-w-md">
