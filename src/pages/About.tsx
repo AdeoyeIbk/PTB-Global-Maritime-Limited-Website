@@ -12,9 +12,9 @@ const About = () => {
       image: executive1
     },
     {
-      name: "Gregory Davis Harrison",
+      name: "Gregory David Harrison",
       position: "Executive Director",
-      bio: "Greg has a strong background in communication technology and infrastructure. Having been a technician and progressing on to lead a team of technician as a manager and supervisor in Telecommunications and maintenance. Greg is highly skilled in customer relations and problem solving. Greg as One of the PIB Global Maritime foreign Executive Director, is to ensure transparent business engagement/relationship with our clients home and abroad, and will also Supervise on the note of task Successful accomplish.",
+      bio: "Greg has a strong background in communication technology and infrastructure. Having been a technician and progressing on to lead a team of technician as a manager and supervisor in Telecommunications and maintenance. Greg is highly skilled in customer relations and problem solving. Greg as One of the PTB Global Maritime foreign Executive Director, is to ensure transparent business engagement/relationship with our clients home and abroad, and will also Supervise on the note of task Successful accomplish.",
       image: executive2
     }
   ];

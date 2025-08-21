@@ -208,13 +208,13 @@ const Services = () => {
                  <CardContent className="text-center">
                     <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                       <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-24 h-24 object-cover"
-                        style={{ width: "100%", height: "96px", objectFit: "cover" }}
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-24 md:w-24 md:h-24 object-cover"
+                      style={{ height: "96px", objectFit: "cover" }}
                       />
                     </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">
+                    <h3 className="text-xl font-bold text-primary mb-3">
                     {service.title}
                   </h3>
                   <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">

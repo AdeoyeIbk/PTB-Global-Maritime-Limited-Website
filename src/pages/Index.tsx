@@ -6,66 +6,23 @@ import Layout from "@/components/Layout";
 import maritimeHeroBg from "@/assets/maritime-hero-bg.jpg";
 import maritimeVideoMp4 from "@/assets/videos/maritime-video.mp4";
 import maritimeVideoWebm from "@/assets/videos/maritime-video.webm";
-// services images
-import {
-  offshoresupportvessels,
-  anchorhandling,
-  securityvessel,
-  houseboatbarge,
-} from "@/assets/services-images/images";
+
 
 const Index = () => {
-const services = [
-  {
-    title: "Supply of offshore support vessels (OSV)",
-    description: "Reliable offshore support vessels to meet diverse operational needs in oil, gas, and maritime industries.",
-    features: [
-      "Supply vessel management",
-      "Cargo handling & storage",
-      "Offshore transport support",
-      "Fuel and provisions delivery",
-      "Emergency response logistics"
-    ],
-    image: offshoresupportvessels
-  },
-  {
-    title: "Supply of anchor handling tug supply vessels (AHTS)",
-    description: "Powerful tug vessels designed for towing, anchor handling, and offshore installation support.",
-    features: [
-      "Anchor handling operations",
-      "Towing and positioning rigs",
-      "Heavy lifting support",
-      "Rescue and standby services",
-      "Deep-water operations"
-    ],
-    image: anchorhandling
-  },
-  {
-    title: "All kinds of security escort and field security vessel",
-    description: "Specialized vessels ensuring maritime security for offshore installations, cargo, and crew.",
-    features: [
-      "Armed security escort",
-      "Surveillance & monitoring",
-      "Field security patrols",
-      "Crew protection services",
-      "Anti-piracy operations"
-    ],
-    image: securityvessel
-  },
-  // {
-  //   title: "Supply of house boat, barges for cargos",
-  //   description: "Comfortable offshore houseboats and reliable barges for transporting cargo and equipment.",
-  //   features: [
-  //     "Houseboat accommodation",
-  //     "Cargo transport barges",
-  //     "Storage solutions",
-  //     "Crew facilities",
-  //     "Shallow water access"
-  //   ],
-  //   image: houseboatbarge
-  // },
-  
-];
+
+  const services = [
+    "Supply Of Offshore Support Vessels (OSV)",
+    "Supply Of Anchor Handling Tug Supply Vessels (AHTS)",
+    "All Kinds Of Security Escort And Field Security Vessels",
+    "Supply Of House Boats, Barges For Cargo",
+    "Speed Trial And Inspection Of Security Vessels",
+    "Crewing Of Offshore Support Vessels & Security Vessels",
+    "Supply Of Petroleum Products (Haulage)",
+    "Supply Of Engine Room Accessories And Consumables (Fueling, Lube Oil, Engine Filters, Valves, Hydraulics)",
+    "Vessel Food Chandling",
+    "Sand-Blasting And Painting Of Rigs, FPSO, And Rig Platforms",
+    "We Do All Your Company Logistics In Both Sea & Land In As Much As It Is Oil & Gas"
+  ];
 
   return (
     <Layout>
@@ -107,7 +64,7 @@ const services = [
         </div>
       </section>
 {/* video section */}
-            <section className="mt-20 flex justify-center items-center">
+            <section className="my-20 flex justify-center items-center">
               <div className="bg-primary shadow-2xl rounded-2xl overflow-hidden border border-primary-foreground/10 w-full max-w-4xl">
                 <div className="w-full flex justify-center">
                   <video
@@ -124,7 +81,8 @@ const services = [
                   </video>
                 </div>
               </div>
-            </section>
+      </section>
+      
       {/* Services Overview Section */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -136,41 +94,24 @@ const services = [
               We provide comprehensive maritime and offshore solutions tailored to meet the demanding requirements of the industry.
             </p>
           </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg h-full">
-                 <CardContent className="text-center">
-                    <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-24 h-24 object-cover"
-                        style={{ width: "100%", height: "96px", objectFit: "cover" }}
-                      />
-                    </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
-                    {service.description}
-                  </p>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-primary text-sm mb-3">Key Services:</h4>
-                    <ul className="space-y-1">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="text-sm text-muted-foreground flex items-center">
-                          <span className="w-1.5 h-1.5 bg-secondary rounded-full mr-2 flex-shrink-0"></span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
+          {/* services here */}
+          <ul className="flex flex-col gap-3 mb-10 list-none">
+            
+            {services.map((service) => (
+              <li key={service} className="flex items-center justify-center text-center">
+                <h3 className="text-xl md:text-3xl font-semibold text-primary">{service}</h3>
+              </li>
             ))}
-          </div>
+          </ul>
+            <div className="text-center mb-16">
+           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+               OUR SERVICES ON A SPECIAL NOTE!
+            </h2>
+          <p className="text-center text-2xl text-muted-foreground mx-auto">
+            PTB GLOBAL MARITIME RESOURCES handles your already won marine contracts, in terms of managing your vessels both offshore support vessels (OSV) and Security Escort Vessels. We go as low as Sort for vessel of all kind, check all the current required vessel documentation, We inspect the Engine condition to confirm fit to a task, We Carry Out Speed trial test to ensure contract agreed speed or knots, Crewing the vessel with a qualify Sea men with their various positions in their minimize Salaries, including Armed Navy officers onboard security vessel. We ensure Supply of food/provision (food chandling), including the Supply of bunker to the vessel.
 
+ 'ENGAGE US, LET US MANAGE YOUR VESSELS AND YOUR MARINE COMPANY WITH A VERY MINIMIZE COST AND ON TIME TASK/SERVICES DELIVERY.'
+          </p></div>
             <div className="text-center mt-12">
               <Button asChild size="lg">
                 <Link to="/services">View All Services</Link>
@@ -178,21 +119,7 @@ const services = [
             </div>
             </div>
             </section>
-            {/* video section
-            <section className="py-20 text-primary-foreground flex justify-center items-center">
-              <div className="w-full flex justify-center">
-                <iframe
-                  width="1120"
-                  height="630"
-                  src="https://www.youtube.com/embed/8bFW4R_5B9E?si=RH1yP75tK--hQzlq&autoplay=1"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </section> */}
+           
             
 
       {/* CTA Section */}
