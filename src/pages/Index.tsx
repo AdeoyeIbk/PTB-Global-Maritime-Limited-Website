@@ -4,8 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 // video formats
 import maritimeHeroBg from "@/assets/maritime-hero-bg.jpg";
-import maritimeVideoMp4 from "@/assets/videos/maritime-video.mp4";
-import maritimeVideoWebm from "@/assets/videos/maritime-video.webm";
+import maritimeVideoMp4 from "@/assets/videos/maritime-video2.mp4"
 
 
 const Index = () => {
@@ -64,8 +63,8 @@ const Index = () => {
         </div>
       </section>
 {/* video section */}
-            <section className="my-20 flex justify-center items-center">
-              <div className="bg-primary shadow-2xl rounded-2xl overflow-hidden border border-primary-foreground/10 w-full max-w-4xl">
+            <section className="my-10 flex justify-center items-center">
+              <div className="bg-primary shadow-2xl rounded-2xl overflow-hidden border w-full max-w-6.5xl">
                 <div className="w-full flex justify-center">
                   <video
                     className="w-full"
@@ -75,7 +74,6 @@ const Index = () => {
                     muted
                   >
                     <source src={maritimeVideoMp4} type="video/mp4" />
-                    <source src={maritimeVideoWebm} type="video/webm" />
                     <source src="../assets/videos/maritime-video.ogv" type="video/ogv" />
                     Your browser does not support the video tag.
                   </video>
@@ -96,17 +94,19 @@ const Index = () => {
           </div>
           {/* services here */}
           <ul className="flex flex-col gap-3 mb-10 list-none">
-            
             {services.map((service) => (
-              <li key={service} className="flex items-center justify-center text-center">
+              <li key={service} className="flex items-center justify-start">
+                <span className="w-3 h-3 rounded-full bg-secondary mr-4 border-primary" />
                 <h3 className="text-xl md:text-3xl font-semibold text-primary">{service}</h3>
               </li>
             ))}
           </ul>
-            <div className="text-center mb-16">
-           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
-               OUR SERVICES ON A SPECIAL NOTE!
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+              Our Services On a Special Note!
             </h2>
+          </div>
           <p className="text-center text-2xl text-muted-foreground mx-auto">
             PTB GLOBAL MARITIME RESOURCES handles your already won marine contracts, in terms of managing your vessels both offshore support vessels (OSV) and Security Escort Vessels. We go as low as Sort for vessel of all kind, check all the current required vessel documentation, We inspect the Engine condition to confirm fit to a task, We Carry Out Speed trial test to ensure contract agreed speed or knots, Crewing the vessel with a qualify Sea men with their various positions in their minimize Salaries, including Armed Navy officers onboard security vessel. We ensure Supply of food/provision (food chandling), including the Supply of bunker to the vessel.
 

@@ -191,7 +191,7 @@ const values = [
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               { number: "25+", label: "Years Experience" },
-              { number: "500+", label: "Projects Completed" },
+              { number: "300+", label: "Projects Completed" },
               { number: "50+", label: "Global Clients" },
               { number: "99.9%", label: "Safety Record" }
             ].map((stat, index) => (
