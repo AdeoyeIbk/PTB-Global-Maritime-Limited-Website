@@ -34,7 +34,7 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="flex items-center justify-center">
                 <img src={LogoOnOrange} alt="PTB Logo" className="w-auto h-8" />
               </div>
-              <span className="font-bold text-xl text-primary">PTB Global Maritime Limited</span>
+              <span className="font-bold text-xl md:text-xl text-lg text-primary">PTB Global Maritime Limited</span>
             </Link>
 
             {/* Desktop Navigation */}
