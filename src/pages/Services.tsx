@@ -211,7 +211,7 @@ const Services = () => {
                       src={service.image}
                       alt={service.title}
                       className="w-full h-24 md:w-24 md:h-24 object-cover"
-                      style={{ height: "96px", objectFit: "cover" }}
+                      style={{ height: "200px", objectFit: "cover", width: "-webkit-fill-available" }}
                       />
                     </div>
                     <h3 className="text-xl font-bold text-primary mb-3">
