@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 // video formats
 import maritimeHeroBg from "@/assets/maritime-hero-bg.jpg";
-import maritimeVideoMp4 from "@/assets/videos/SHIP WEBSITE.mp4";
+import maritimeVideoMp4 from "@/assets/videos/maritime_video_custom.mp4";
 
 const Index = () => {
 
