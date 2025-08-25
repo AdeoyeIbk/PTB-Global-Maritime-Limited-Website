@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 // video formats
 import maritimeHeroBg from "@/assets/maritime-hero-bg.jpg";
-import maritimeVideoMp4 from "@/assets/videos/maritime_video2.mp4"
+import maritimeVideoMp4 from "@/assets/videos/maritime_video_custom.mp4"
 
 
 const Index = () => {
@@ -74,7 +74,7 @@ const Index = () => {
                     muted
                   >
                     <source src={maritimeVideoMp4} type="video/mp4" />
-                    <source src="../assets/videos/maritime-video.ogv" type="video/ogv" />
+                    {/* <source src="../assets/videos/maritime-video.ogv" type="video/ogv" /> */}
                     Your browser does not support the video tag.
                   </video>
                 </div>
