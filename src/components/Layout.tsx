@@ -154,8 +154,8 @@ const Layout = ({ children }: LayoutProps) => {
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
               <div className="space-y-2 text-primary-foreground/80">
-                <p>ptbglobal2025@gmail.com</p>
-                <p>+234 708 801 6138, +234 707 180 8611</p>
+                <p>ptbglobal2025@gmail.com <br /> info@ptbglobal.com</p>
+                <p>+234 708 801 6138, <br/> +234 707 180 8611</p>
                 <p>No. 7 Orange Drive, Cedar Wood Garden Estate Off SARS Road, Port Harcourt Rivers State</p>
               </div>
             </div>
